@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigating Newmans Podcast</title>
+  <meta name="description" content="A homeschooling family of six trading the classroom for the open road. RV life, Disney World, Disney Cruise Line, and family travel adventures." />
+  <meta property="og:title" content="Navigating Newmans Podcast" />
+  <meta property="og:description" content="A homeschooling family of six trading the classroom for the open road." />
+  <meta property="og:image" content="cover.jpg" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0c1a;
+      color: #f0ece4;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(160deg, #1a1035 0%, #2d1a4a 40%, #4a2010 100%);
+      padding: 3rem 1.5rem 4rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,180,60,0.2);
+    }
+
+    .cover-wrap {
+      display: inline-block;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      margin-bottom: 1.5rem;
+    }
+
+    .cover-wrap img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f5c842;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: rgba(240,236,228,0.7);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .listen-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .listen-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: opacity 0.15s;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .listen-btn:hover { opacity: 0.8; }
+    .btn-apple  { background: #872ec4; color: #fff; }
+    .btn-spotify { background: #1db954; color: #fff; }
+    .btn-youtube { background: #ff0000; color: #fff; }
+    .btn-rss    { background: #f5820d; color: #fff; }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f5c842;
+      margin-bottom: 1.5rem;
+    }
+
+    .episode-list { list-style: none; }
+
+    .episode-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .ep-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #f5c842;
+      background: rgba(245,200,66,0.12);
+      border-radius: 6px;
+      padding: 4px 8px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .ep-content { flex: 1; }
+
+    .ep-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f0ece4;
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .ep-desc {
+      font-size: 0.875rem;
+      color: rgba(240,236,228,0.6);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .ep-meta {
+      font-size: 0.75rem;
+      color: rgba(240,236,228,0.4);
+    }
+
+    .rss-info {
+      margin-top: 3rem;
+      padding: 1.25rem 1.5rem;
+      background: rgba(245,200,66,0.06);
+      border: 1px solid rgba(245,200,66,0.2);
+      border-radius: 12px;
+    }
+
+    .rss-info p {
+      font-size: 0.85rem;
+      color: rgba(240,236,228,0.6);
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .rss-url {
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #f5c842;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: rgba(240,236,228,0.3);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="cover-wrap">
+      <img src="cover.jpg" alt="Navigating Newmans Podcast Cover" />
+    </div>
+    <h1>Navigating Newmans</h1>
+    <p class="tagline">A homeschooling family of six trading the classroom for the open road — RV life, Disney World, Disney Cruise Line, and family travel adventures.</p>
+
+    <div class="listen-buttons">
+      <a class="listen-btn btn-apple" href="https://podcasts.apple.com" target="_blank">
+        🎵 Apple Podcasts
+      </a>
+      <a class="listen-btn btn-spotify" href="https://open.spotify.com" target="_blank">
+        🎧 Spotify
+      </a>
+      <a class="listen-btn btn-youtube" href="https://youtube.com" target="_blank">
+        ▶ YouTube
+      </a>
+      <a class="listen-btn btn-rss" href="podcast.xml" target="_blank">
+        📡 RSS Feed
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <p class="section-title">Latest Episodes</p>
+
+    <ul class="episode-list">
+      <li class="episode-card">
+        <span class="ep-num">S1 E1</span>
+        <div class="ep-content">
+          <p class="ep-title">Best Campground Stops on the RV Drive to Disney World</p>
+          <p class="ep-desc">The best campground stops on an RV drive to Disney World can make your road trip just as magical as the destination! Family-friendly campground reviews, fun road trip stops, and insider tips for traveling in an RV with kids.</p>
+          <span class="ep-meta">April 29, 2026 &nbsp;·&nbsp; 21 min</span>
+        </div>
+      </li>
+    </ul>
+
+    <div class="rss-info">
+      <p>Subscribe with any podcast app using our RSS feed:</p>
+      <p class="rss-url">https://navigating-newmans.pages.dev/podcast.xml</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 The Newman Family · Navigating Newmans
+  </footer>
+
+</body>
+</html>

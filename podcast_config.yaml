@@ -1,0 +1,39 @@
+# ============================================================
+# NAVIGATING NEWMANS — Podcast Configuration
+# ============================================================
+# HOW TO ADD A NEW EPISODE:
+#   1. Upload your MP3 to Archive.org and copy the direct download URL
+#   2. Add a new entry under 'episodes:' (copy the block below)
+#   3. Fill in title, description, publication_date, asset_url, file_size, duration
+#   4. Commit and push to GitHub — Cloudflare Pages auto-deploys!
+# ============================================================
+
+metadata:
+  title: "Navigating Newmans"
+  subtitle: "Family travel, RVing, Disney, and homeschooling on the road"
+  description: "A homeschooling family of six trading the classroom for the open road. Navigating Newmans is your go-to podcast for RV life, Disney World trip planning, Disney Cruise Line adventures, and raising kids who actually want to travel with you."
+  link: "https://navigating-newmans.pages.dev"
+  rss_feed_url: "https://navigating-newmans.pages.dev/podcast.xml"
+  language: "en-us"
+  email: "volinator25@gmail.com"
+  author: "The Newman Family"
+  image: "https://navigating-newmans.pages.dev/cover.jpg"
+  explicit: false
+  type: "episodic"
+  category: "Kids & Family"
+  subcategory: "Places & Travel"
+
+# ============================================================
+# EPISODES — Add new episodes at the BOTTOM of this list
+# ============================================================
+episodes:
+
+  - title: "Best Campground Stops on the RV Drive to Disney World"
+    description: "The best campground stops on an RV drive to Disney World can make your road trip just as magical as the destination! We mapped out the ultimate RV route to Disney World with family-friendly campground reviews, fun road trip stops, and insider tips for traveling in an RV with kids. Whether you are driving from the Midwest, Texas, or anywhere in between, here is everything you need to plan the perfect RV road trip to Disney World!"
+    publication_date: "2026-04-29T10:00:00Z"
+    asset_url: "PLACEHOLDER_UPDATE_IN_PHASE_3"
+    duration: "21:26"
+    file_size: 20582050
+    episode_number: 1
+    season_number: 1
+    explicit: false
