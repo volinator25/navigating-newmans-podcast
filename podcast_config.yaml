@@ -83,3 +83,19 @@ episodes:
     episode_number: 6
     season_number: 1
     explicit: false
+
+  - title: "Our RV Stories & Campground Etiquette: The Unwritten Rules of RV Life"
+    description: >
+      A mid-week episode recorded from Tropical Palms in 100-degree heat. Joseph
+      and Stefanie swap their best RV stories and the campground etiquette that
+      makes camping better for everyone — people treating your site like a public
+      park, walking straight through campsites, golf-cart right-of-way, dog
+      clean-up, and a string of backing-in disasters — plus what they've learned
+      switching from a fifth wheel to a Class A motorhome.
+    publication_date: "2026-06-25T00:00:00Z"
+    asset_url: "https://archive.org/download/06.24.2026/6.24%20podcast.mp3"
+    duration: "18:05"
+    file_size: 18594718
+    episode_number: 7
+    season_number: 1
+    explicit: false
